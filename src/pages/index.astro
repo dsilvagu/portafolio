@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import '@fontsource-variable/montserrat';
+import Socials from '../components/Socials.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Techno from '../components/Techno.astro';
+import Frontend from '../components/Frontend.astro';
+---
+
+<Layout title='David A. | Portfolio'>
+	<main class="max-w-sm mx-auto font-mont relative min-h-screen lg:max-w-7xl py-10">
+		<div class="grid gap-10 lg:grid-cols-2">
+			<Hero />
+			<div class="px-2 flex flex-col gap-10 py-10">
+				<Socials />
+				<AboutMe />
+				<Techno />
+				<Frontend />
+			</div>
+		</div>
+	</main>
+</Layout>

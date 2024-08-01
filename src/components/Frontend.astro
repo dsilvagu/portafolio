@@ -1,0 +1,41 @@
+---
+import img1 from "../images/pre1.webp"
+import img2 from "../images/pre2.webp"
+import img3 from "../images/pre3.webp"
+import img4 from "../images/pre4.webp"
+import CardFront from "../cards/CardFront.astro"
+---
+
+<div class="relative w-full h-full">
+    <p class="text-sm font-semibold">Prácticas | Frontend Mentor</p>
+    
+    <div class="grid gap-3 sm:grid-cols-2 py-5">
+        <CardFront title="Challegue 11" image={img1.src} url=""/>
+        <CardFront title="Challegue 10" image={img2.src} url=""/>
+        <CardFront title="Challegue 09" image={img3.src} url=""/>
+        <CardFront title="Challegue 08" image={img4.src} url=""/>
+    </div>
+</div>
+
+<!--
+
+<a href="" class="w-full h-full relative overflow-hidden bg-cover bg-no-repeat group rounded-lg" target="_blank">
+            <img class="rounded-lg border transition duration-300 ease-in-out hover:scale-110 group" src={img1.src} alt="">
+            <p class="text-xs bottom-0 p-2 absolute bg-white group-hover:bg-black transition duration-300 group-hover:text-white">Challegue 11</p>
+        </a>
+
+        <a href="" class="w-full h-full relative overflow-hidden bg-cover bg-no-repeat group rounded-lg" target="_blank">
+            <img class="rounded-lg border transition duration-300 ease-in-out hover:scale-110 group" src={img2.src} alt="">
+            <p class="text-xs bottom-0 p-2 absolute bg-white group-hover:bg-black transition duration-300 group-hover:text-white">Challegue 10</p>
+        </a>
+
+        <a href="" class="w-full h-full relative overflow-hidden bg-cover bg-no-repeat group rounded-lg" target="_blank">
+            <img class="rounded-lg border transition duration-300 ease-in-out hover:scale-110 group" src={img3.src} alt="">
+            <p class="text-xs bottom-0 p-2 absolute bg-white group-hover:bg-black transition duration-300 group-hover:text-white">Challegue 09</p>
+        </a>
+
+        <a href="" class="w-full h-full relative overflow-hidden bg-cover bg-no-repeat group rounded-lg" target="_blank">
+            <img class="rounded-lg border transition duration-300 ease-in-out hover:scale-110 group" src={img4.src} alt="">
+            <p class="text-xs bottom-0 p-2 absolute bg-white group-hover:bg-black transition duration-300 group-hover:text-white">Challegue 08</p>
+        </a>
+-->

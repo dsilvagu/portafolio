@@ -1,0 +1,16 @@
+---
+interface Props {
+    logo: string,
+    title: string,
+    text: string,
+    link: string
+}
+
+const {logo, title, text, link} = Astro.props;
+---
+<a href={link} target="_blank" class="border rounded-3xl flex flex-col gap-2 p-4 hover:bg-slate-50 transition duration-500 text-xs max-w-56">
+    <img class="bg-black size-10 p-1 rounded-lg" src={logo} alt="">
+    <p class="font-semibold">{title}</p>
+    <p class="font-light">{text}</p>
+</a>
+

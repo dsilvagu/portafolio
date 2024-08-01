@@ -1,0 +1,35 @@
+---
+import CardSocials from "../cards/CardSocials.astro";
+import img1 from "../icons/IconGit.svg";
+import img2 from "../icons/IconInsta.svg";
+import img3 from "../icons/IconLinke.svg";
+import img4 from "../icons/IconFMentor.svg"
+---
+
+<div class="grid gap-3 lg:grid-cols-2 justify-stretch">
+
+    <CardSocials 
+    logo={img1.src}
+    title="David Alejandro"
+    text="github.com" 
+    link="https://github.com/dsilvagu"/>
+
+    <CardSocials 
+    logo={img2.src}
+    title="@dsilvagu_25"
+    text="instagram.com" 
+    link="https://github.com/dsilvagu"/>
+
+    <CardSocials 
+    logo={img3.src}
+    title="David Alejandro | LinkedIn"
+    text="linkedin.com" 
+    link="https://www.linkedin.com/in/david-alejandro-silva-guti%C3%A9rrez-698a1b313/"/>
+
+    <CardSocials 
+    logo={img4.src}
+    title="@dsilvagu"
+    text="frontendmentor.io" 
+    link="https://www.frontendmentor.io/profile/dsilvagu"/>
+
+</div>

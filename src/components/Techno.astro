@@ -1,0 +1,20 @@
+---
+import CardTechno from "../cards/CardTechno.astro";
+import img1 from "../images/Astro.webp";
+import img2 from "../images/CSS3.webp";
+import img3 from "../images/HTML5.webp";
+import img4 from "../images/JavaScript.webp";
+import img5 from "../images/Tailwind CSS.webp";
+---
+
+<div class="relative w-full h-full">
+    <p class="text-sm font-semibold">Tecnologias | Usadas </p>
+    <div class="py-4 flex flex-wrap gap-5">
+        <CardTechno img={img2.src} color="" />
+        <CardTechno img={img3.src} color="" />
+        <CardTechno img={img4.src} color="" />
+        <CardTechno img={img5.src} color="" />
+        <CardTechno img={img1.src} color="" />
+    </div>
+    
+</div>

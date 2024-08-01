@@ -1,0 +1,41 @@
+---
+import img1 from '../images/basket.webp';
+import img2 from '../images/maps.webp';
+import img3 from '../images/Cloud.png';
+import img4 from '../images/airplane.png'
+
+---
+
+<div class="relative w-full h-full">
+    <p class="text-sm font-semibold">Sobre mí</p>
+        <div class="py-4 grid gap-3 sm:grid-cols-2">
+            <div class="grid gap-3">
+                <div class="bg-black py-5 px-5 text-white rounded-3xl flex items-center">
+                    <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sed libero minima! Sint dolorum perferendis beatae aperiam et, ipsam numquam delectus magnam  </p>
+                </div>
+                <div class="rounded-3xl overflow-hidden border relative">
+                    <img class="object-cover h-auto " src={img1.src} alt="">
+                </div>  
+            </div>
+
+            <div class=" rounded-3xl overflow-hidden relative border flex">
+                <img class="object-cover h-full max-w-full" src={img2.src} alt="">
+
+                <p class="bg-white/60 absolute bottom-0 text-xs p-4 border rounded-se-3xl">Piura, Perú</p>
+
+                <img class="absolute inset-0 top-4 animate-[wiggle_10s_linear_infinite] " src={img3.src} alt="">
+
+                <img class="absolute inset-0 top-1 animate-[wiggle_6s_linear_infinite] " src={img3.src} alt="">
+
+                <div class="absolute inset-0 top-12 animate-[wiggle_8s_linear_infinite] ">
+                    <img class=" bottom-0 transform rotate-45 size-8 " src={img4.src} alt="">
+                </div>
+
+                
+                
+            </div>
+        
+        
+    </div>
+</div>
+

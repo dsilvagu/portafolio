@@ -10,11 +10,14 @@ const {title, image ,url} = Astro.props;
 
 <div class="border rounded-3xl text-xs hover:bg-gray-50 transition duration-300 ease-in-out w-full relative group">
   <div class="p-4 flex flex-col gap-4">
-    <p class="text-sm font-medium text-center">{title}</p>
     <div class="rounded-3xl overflow-hidden relative">
         <img class="group-hover:scale-110 transition duration-300 ease-in-out" src={image} alt="">
     </div>
-    <a class="text-white bg-black  p-2 rounded-3xl text-center hover:text-black hover:bg-white border transition duration-300 ease-out" href={url}>Visit Web</a>
+    <div class="flex gap-2">
+        <p class="border py-2 px-4 rounded-3xl">Tailwind</p>
+        <p class="border py-2 px-4 rounded-3xl">Astro</p>
+    </div>
+    <a class="text-white bg-black  p-2 rounded-3xl text-center hover:text-black hover:bg-white border transition duration-300 ease-out" target="_blank" href={url}>Visit Web</a>
   </div>
 </div>
 

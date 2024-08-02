@@ -7,6 +7,6 @@ interface Props {
 const {img, color} = Astro.props;
 ---
 
-<div class="border p-3 rounded-2xl" class:list={color}>
+<div class="border p-3 rounded-2xl hover:bg-slate-100 transition duration-500" class:list={color}>
     <img class="size-10" src={img} alt="">
 </div>
